@@ -73,10 +73,10 @@ db.session.add(CovertActionType(
 # approval_level_required = 3?,
 # work_credits_required = 10?
 #
-# Campaign of threats (Vulnerability/direct action?) == attempts to reduce the target's loyalty to the regime, while at the same time increasing fear of the agency
-# requested_action = "Campaign of threats"
+# Harrasment (Vulnerability/direct action?) == attempts to reduce the target's loyalty to the regime, while at the same time increasing fear of the agency
+# requested_action = "Harrasment"
 # category = "Direct action", # Depends on which one you'd think fit best
-# description = "A few streams of escalating threats, and the sending of non-functional explosive devices, should instill fear onto the target",
+# description = "The target will be harassed physically and electronically, culminating with a few fake bomb threats, designed to instill fear onto the target",
 # approval_level_required = 5?,
 # work_credits_required = 20?
 #
@@ -85,4 +85,26 @@ db.session.add(CovertActionType(
 # category = "Establish vulnerability",
 # description = "A Coverts Ops team will be dispatched to strip the targets' wealth and assets which could lead the target into performing financial-related crimes",
 # approval_level_required = 3?,
-# work_credits_required = 10?
+# work_credits_required = 15?
+#
+# Pay informants (Intel gathering) == perhaps an idea for the future, but allow agents to use cash to buy off info about the target; would require recruited sources first
+# requested_action = "Pay informants",
+# category = "Intel gathering",
+# description = "Covert Ops will pay a visit to several local informants to purchase information about the target",
+# approval_level_required = 2?,
+# work_credits_required = 2?
+# Would reduce cash by about $2000
+#
+# Smear campaigns (Direct action) == reduces the target's loyalty to the regime, though have the potential to demote the target's intel value?
+# requested_action = "Smear campaigns",
+# category = "Direct action",
+# description = "Nasty rumors about the target will be spread to every news outlet and tabloid columns in the country, causing psychological harm to the target",
+# approval_level_required = 5?,
+# work_credits_required = 15?
+#
+# Personal disruptions (Direct action) == increases the target's fear of the agency, though would potentially increase the target's loyalty to the regime"
+# requested_action = "Personal disruptions"
+# category = "Direct action",
+# description = "Mislabelled medicines, property damages, and sabotages: these minor things will slowly demoralize the target",
+# approval_level_required = 5?,
+# work_credits_required = 20?
