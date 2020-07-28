@@ -14,7 +14,7 @@ db.session.add(CovertActionType(
     work_credits_required = 4))
 
 db.session.add(CovertActionType(
-    requested_action = "Hack phone",
+    requested_action = "Hack phone", # Suggestion: perhaps instead of hack phone, it could be wiretappig? Would allow the description to be used to intercept e-mail comms as well.
     category = "Intel gathering",
     description = "Use covert methods to gain access to to the subject's mobile phone calls and texts",
     approval_level_required = 2,
@@ -47,3 +47,42 @@ db.session.add(CovertActionType(
     description = "Remove a threat permanently",
     approval_level_required = 5,
     work_credits_required = 40))
+
+#############
+# Suggestions
+#############
+#
+# Incrimination (Vulnerability) == the idea is to create a blackmail against the target utilising more crime-related blackmail, e.g. planted photos, fake paper trails, etc.
+# requested_action = "Incrimination",
+# category = "Establish vulnerability",
+# description = "Create falsified evidence incriminating the target in an illegal act in order to gain leverage over the target",
+# approval_level_required = 3?,
+# work_credits_required = 10?
+#
+# Brainwashing (Direct Action) == reprogram the target's allegiance and instantly recruit the target, but the chances of being burnt/exposed is high
+# requested_action = "Brainwashing",
+# category = "Direct action",
+# description = "Using a mix of hypno-theraphy and experimental drugs, the target will be bent into our unwitting tool",
+# approval_level_required = 5?,
+# work_credits_required = 80?
+#
+# Disinformation campaign (Vulnerability/direct action?) == whereas other action seeks to find blackmail, this action reduces the target's loyalty to the regime
+# requested_action = "Disinformation campaign",
+# category = "Establish vulnerability" / "Direct action", # Depends on which one you'd think fit best
+# description = "The target will be bombarded by a series of targeted anti-regime ads and fake news to lower their loyalty to the regime",
+# approval_level_required = 3?,
+# work_credits_required = 10?
+#
+# Campaign of threats (Vulnerability/direct action?) == attempts to reduce the target's loyalty to the regime, while at the same time increasing fear of the agency
+# requested_action = "Campaign of threats"
+# category = "Direct action", # Depends on which one you'd think fit best
+# description = "A few streams of escalating threats, and the sending of non-functional explosive devices, should instill fear onto the target",
+# approval_level_required = 5?,
+# work_credits_required = 20?
+#
+# Financial sabotage (Establish vulnerability) == target's finances is disrupted, creating the potential for financially-connected blackmail (in debt/gambling/stealing from employer) and perhaps allowing agents to gain some extra cash
+# requested_action = "Financial sabotage",
+# category = "Establish vulnerability",
+# description = "A Coverts Ops team will be dispatched to strip the targets' wealth and assets which could lead the target into performing financial-related crimes",
+# approval_level_required = 3?,
+# work_credits_required = 10?
