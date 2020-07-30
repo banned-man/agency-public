@@ -23,21 +23,28 @@ if employment_industry == "Politics":
         if dice == 2: employment_job_title = "Admin Assistant"
     if employment_job_level == 2:
         dice = randint(1,5)
+        #dice = randint(1,7) # Added 2 new positions
         if dice == 1: employment_job_title = "Advisor"
         if dice == 2: employment_job_title = "Researcher"
         if dice == 3: employment_job_title = "Think Tank Researcher"
         if dice == 4: employment_job_title = "Speech Writer"
         if dice == 5: employment_job_title = "Spokesperson"
+        #if dice == 6: employment_job_title = "Interpreter"
+        #if dice == 7: employment_job_title = "Political Activist"
     if employment_job_level == 3:
         dice = randint(1,2)
+        #dice = randint(1,3) # Added 1 new positions
         if dice == 1: employment_job_title = "Senior Advisor"
         if dice == 2: employment_job_title = "Member of Legislature"
+        #if dice == 3: employment_job_title = "Head of Advocacy Group"
     if employment_job_level == 4:
         dice = randint(1,2)
+        #dice = randint(1,3) # Added 1 new positions
         if dice == 1: employment_job_title = "Presidential Advisor"
         if dice == 2: employment_job_title = "Head of Legislative Affairs"
+        #if dice == 3: employment_job_title = "Chief of Staff"
     if employment_job_level == 5:
-        employment_job_title = "Cabinet Member"
+        employment_job_title = "Cabinet Member" #Suggest changing to "Senior Cabinet Member" to avoid confusion with "Member of Legislature"?
 
 if employment_industry == "Finance":
     if employment_job_level == 1:
